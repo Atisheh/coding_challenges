@@ -23,15 +23,16 @@ Job offer structure should include:
 
 
 ## Infos
-- I decided to use Tastypie since I already know it, in the beginning I tried to set it up with Flask but that wasn't one of my best ideas.
+- I decided to use Tastypie since I already know it, in the beginning I tried to set it up with Flask but that wasn't one of my best ideas. (I want to try it with Django REST later on)
 - URLs you can/should use:
   - /api/v1/offer/?format=json
   - /api/v1/offer/1/?format=json
   - /api/v1/offer?limit=25&offset=50&format=json
   - /api/v1/offer/overview/?format=json
-- doing it in Postman was the best and easiest way for me
+- doing it with Postman was the best and easiest way for me
 - example how to send data:
   - {"title": "Python Backend Developer","description": "more info","company": "Startup","location": "Berlin","category": "IT"}
 - setup:
+  - create a postgres db called 'api' or use an existing one and change the name in the settings
   - install requirements
   - run migrations
